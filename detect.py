@@ -153,7 +153,7 @@ def detect(save_img=False):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--weights', nargs='+', type=str, default='weights/best.pt', help='model.pt path(s)')
-    parser.add_argument('--source', type=str, default="294.png", help='source')  # file/folder, 0 for webcam
+    parser.add_argument('--source', type=str, default="0", help='source')  # file/folder, 0 for webcam
     parser.add_argument('--img-size', type=int, default=640, help='inference size (pixels)')
     parser.add_argument('--conf-thres', type=float, default=0.45, help='object confidence threshold')
     parser.add_argument('--iou-thres', type=float, default=0.5, help='IOU threshold for NMS')
